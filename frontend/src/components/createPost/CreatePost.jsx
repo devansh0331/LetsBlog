@@ -60,7 +60,7 @@ function CreatePost() {
     if (title === "" || summary === "" || content === "" || files === "") {
       alert("All fields are mandatory");
     } else {
-      const response = await fetch("http://localhost:5000/post", {
+      const response = await fetch("https://lets-blog-pfs7.onrender.com/post", {
         method: "POST",
         // headers: {
         //   "Content-Type": "application/json",

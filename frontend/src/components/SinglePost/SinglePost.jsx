@@ -10,7 +10,7 @@ function SinglePost() {
 
   useEffect(() => {
     console.log(id);
-    fetch(`http://localhost:5000/post/${id}`).then((response) =>
+    fetch(`https://lets-blog-pfs7.onrender.com/post/${id}`).then((response) =>
       response.json().then((postInfo) => setPostInfo(postInfo))
     );
   }, []);
@@ -24,7 +24,10 @@ function SinglePost() {
           <p>by {postInfo.author.username}</p>
         </div>
         {/* <Link to={`/edit/${id}`}>Edit Post</Link> */}
-        <img src={"http://localhost:5000/" + postInfo.cover} alt="" />
+        <img
+          src={"https://lets-blog-pfs7.onrender.com/" + postInfo.cover}
+          alt=""
+        />
         {/* <p>{postInfo.content}</p> */}
         {/* {postInfo.content} */}
         <p>{postInfo.summary}</p>

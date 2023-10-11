@@ -6,7 +6,7 @@ import "./Home.css";
 function Home() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/post").then((response) =>
+    fetch("https://lets-blog-pfs7.onrender.com/post").then((response) =>
       response.json().then((posts) => setPosts(posts))
     );
   }, []);

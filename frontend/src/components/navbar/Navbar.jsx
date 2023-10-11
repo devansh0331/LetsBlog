@@ -24,7 +24,7 @@ function Navbar() {
   }, []);
 
   const handleLogout = () => {
-    fetch("http://localhost:5000/logout", {
+    fetch("https://lets-blog-pfs7.onrender.com/logout", {
       credentials: "include",
       method: "POST",
     });

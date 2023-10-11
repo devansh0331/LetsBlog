@@ -20,7 +20,7 @@ function BlogCard({
     <div className="blogCard">
       <div className="blogCardDetails">
         <Link to={`/post/${_id}`}>
-          <img src={"http://localhost:5000/" + cover} alt="" />
+          <img src={"https://lets-blog-pfs7.onrender.com/" + cover} alt="" />
         </Link>
         <div className="blogCardContent">
           <Link to={`/post/${_id}`}>

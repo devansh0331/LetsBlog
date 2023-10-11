@@ -15,7 +15,7 @@ function Login() {
     e.preventDefault();
     console.log(username, password);
     try {
-      const data = await fetch("http://localhost:5000/login", {
+      const data = await fetch("https://lets-blog-pfs7.onrender.com/login", {
         method: "POST",
         body: JSON.stringify({ username, password }),
         headers: {

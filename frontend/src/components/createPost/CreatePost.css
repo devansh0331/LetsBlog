@@ -1,0 +1,83 @@
+.create {
+  width: 90vw;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+}
+.blogPost h1 {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.create input,
+select {
+  width: 90%;
+  margin-top: 2rem;
+  outline: none;
+  padding: 0.7rem;
+  background: black;
+  border-color: rgb(133, 132, 132);
+  border: 1px solid white;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 7px;
+}
+
+.create input::placeholder {
+  color: #008170;
+  color: gray;
+}
+.create select option {
+  background: #0f0f0f;
+  color: white;
+  width: 90%;
+}
+
+.react-quill {
+  width: 90%;
+  margin-top: 2rem;
+  height: inherit;
+  font-size: 1.5rem;
+  border-radius: 7px !important;
+  background: black;
+}
+.react-quill > textarea {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.create button {
+  margin-top: 2rem;
+  width: 90%;
+}
+
+.ql-snow .ql-formats {
+  vertical-align: bottom !important;
+}
+.ql-snow .ql-stroke {
+  stroke: white;
+}
+.ql-snow .ql-stroke {
+  color: white;
+}
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+  fill: white;
+}
+.postBtn {
+  background: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 7px;
+  border: 2px solid #008170;
+  transition: 0.3s all ease-in-out;
+}
+
+.postBtn:hover {
+  background: #008170;
+}

@@ -1,0 +1,44 @@
+.register {
+  width: 100vw;
+}
+
+.register h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.register form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 30vh;
+}
+
+.register form input {
+  width: 30%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.register form button {
+  width: 31.5%;
+  background: rgb(34, 34, 34);
+  border: 2px solid transparent;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .register form input {
+    width: 70%;
+  }
+  .register form button {
+    width: 70%;
+  }
+}

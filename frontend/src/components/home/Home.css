@@ -1,0 +1,38 @@
+.home {
+  width: 99vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home > div > span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.homeContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homeBlogs {
+  width: 80vw;
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 700px) {
+  .home {
+    width: 90vw;
+    overflow-x: hidden !important;
+  }
+  .home > div > span {
+    font-size: 1.5rem;
+  }
+  .homeBlogs {
+    grid-template-columns: auto;
+  }
+}

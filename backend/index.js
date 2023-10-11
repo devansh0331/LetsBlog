@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: "https://lets-blog-9c7a5.web.app/",
+    origin: "https://lets-blog-9c7a5.web.app",
   })
 );
 
